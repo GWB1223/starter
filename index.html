@@ -4,33 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Startup Backers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="bg-stars"></div>
-<div class="bg-radial"></div>
+<canvas id="particles"></canvas>
 
-<!-- ================= NAVBAR ================= -->
+<div class="hero-bg">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="grid-overlay"></div>
+</div>
+
 <header class="navbar">
     <div class="logo">IF</div>
     <nav>
-        <a href="#">Invest</a>
-        <a href="#">Raising</a>
-        <a href="#">Help Centre</a>
+        <a>Invest</a>
+        <a>Raising</a>
+        <a>Help Centre</a>
     </nav>
     <button class="btn-outline">Get Started</button>
 </header>
 
-<!-- ================= HERO ================= -->
 <section class="hero section">
     <div class="hero-inner">
         <span class="badge">Back 200+ of Europe’s Fastest Growing Startups</span>
         <h1>Join Europe’s <span>Top Startup Backers</span></h1>
         <p>With 30,000+ angels backing high-growth investments portfolio and back purposeful businesses.</p>
-
         <div class="hero-buttons">
             <button class="btn-primary">Discover Opportunities</button>
             <button class="btn-secondary">Raise Funds Now</button>
@@ -40,23 +43,12 @@
 
 <div class="horizon"></div>
 
-<!-- ================= FEATURES ================= -->
 <section class="features section">
-    <div class="feature-card glass">
-        <h3>Transparent Fees On Everything</h3>
-        <p>Simple, fair and transparent pricing structure.</p>
-    </div>
-    <div class="feature-card glass">
-        <h3>Take Advantage Of Tax Relief</h3>
-        <p>Claim up to 30% tax relief on investments.</p>
-    </div>
-    <div class="feature-card glass">
-        <h3>Fully Regulated, Safe & Secure</h3>
-        <p>Platform authorised and regulated in Europe.</p>
-    </div>
+    <div class="feature-card glass tilt">Transparent Fees On Everything</div>
+    <div class="feature-card glass tilt">Take Advantage Of Tax Relief</div>
+    <div class="feature-card glass tilt">Fully Regulated, Safe & Secure</div>
 </section>
 
-<!-- ================= START INVESTING ================= -->
 <section class="invest section">
     <div class="section-header">
         <span class="mini-badge">Make Your Money Work</span>
@@ -64,21 +56,21 @@
     </div>
 
     <div class="cards">
-        <div class="card glass">
+        <div class="card glass tilt">
             <div class="card-img yellow"></div>
             <h4>Hatch SEIS Fund</h4>
             <div class="progress"><div style="width:70%"></div></div>
             <p>$1,483,710 Raised</p>
         </div>
 
-        <div class="card glass">
+        <div class="card glass tilt">
             <div class="card-img plane"></div>
             <h4>Hybrid Air Vehicles</h4>
             <div class="progress"><div style="width:55%"></div></div>
             <p>$2,753,324 Raised</p>
         </div>
 
-        <div class="card glass">
+        <div class="card glass tilt">
             <div class="card-img purple"></div>
             <h4>AI Venture Builder</h4>
             <div class="progress"><div style="width:80%"></div></div>
@@ -87,113 +79,8 @@
     </div>
 </section>
 
-<!-- ================= KNOWLEDGE ================= -->
-<section class="knowledge section">
-    <div class="section-header">
-        <span class="mini-badge">Resources & Learn</span>
-        <h2>Level Up Your <span>Investor Knowledge</span></h2>
-    </div>
-
-    <div class="knowledge-grid">
-        <div class="knowledge-card glass">
-            <h4>Investor Returns From Equity Crowdfunding</h4>
-            <p>Learn how returns are calculated.</p>
-        </div>
-        <div class="knowledge-card glass">
-            <h4>Investment Calculator</h4>
-            <p>Understand risks and projected gains.</p>
-        </div>
-        <div class="knowledge-card glass">
-            <h4>Our Due Diligence Charter</h4>
-            <p>Transparent process to protect investors.</p>
-        </div>
-        <div class="knowledge-card glass">
-            <h4>What Is The CrowdCube Nominee?</h4>
-            <p>How our structure works for you.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ================= STATS ================= -->
-<section class="stats section">
-    <div class="section-header">
-        <span class="mini-badge">Impressive Global Track Record</span>
-        <h2>Since 2011, We’ve Kept <span>Impressive Company</span></h2>
-    </div>
-
-    <div class="stats-grid">
-        <div class="stat glass">
-            <h3>3,745</h3>
-            <p>Raises</p>
-        </div>
-        <div class="stat glass">
-            <h3>11,424</h3>
-            <p>Investments</p>
-        </div>
-        <div class="stat glass">
-            <h3>£5.3m</h3>
-            <p>Total Invested</p>
-        </div>
-        <div class="stat glass">
-            <h3>235k</h3>
-            <p>Members</p>
-        </div>
-    </div>
-</section>
-
-<!-- ================= UPDATES ================= -->
-<section class="updates section">
-    <div class="section-header">
-        <span class="mini-badge">What’s New & Industry</span>
-        <h2>Latest <span>Updates</span></h2>
-    </div>
-
-    <div class="cards">
-        <div class="card glass small"><div class="card-img blue"></div><h4>Future of Funding</h4></div>
-        <div class="card glass small"><div class="card-img orange"></div><h4>Importance of Regulated Funding</h4></div>
-        <div class="card glass small"><div class="card-img green"></div><h4>Hatch SEIS Partnership</h4></div>
-    </div>
-</section>
-
-<!-- ================= CTA ================= -->
-<section class="cta">
-    <div class="cta-box glass">
-        <h2>Why Not Join Them?</h2>
-        <p>We have over 1 million members helping to drive growth.</p>
-        <div class="cta-input">
-            <input type="email" placeholder="Your email address...">
-            <button class="btn-primary">Get Started</button>
-        </div>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
-    <div class="footer-grid">
-        <div>
-            <div class="logo">IF</div>
-            <p>Crowd Cube Ltd is authorised and regulated.</p>
-        </div>
-        <div>
-            <h4>Investing</h4>
-            <a>Raise</a>
-            <a>Secondary Sale</a>
-            <a>Investor Centre</a>
-        </div>
-        <div>
-            <h4>Company</h4>
-            <a>About</a>
-            <a>Careers</a>
-            <a>Contact</a>
-        </div>
-        <div>
-            <h4>Connect</h4>
-            <a>Twitter</a>
-            <a>LinkedIn</a>
-            <a>Facebook</a>
-        </div>
-    </div>
-    <p class="copyright">© 2025 Crowdcube. All rights reserved.</p>
+    <p>© 2025 Crowdcube. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
