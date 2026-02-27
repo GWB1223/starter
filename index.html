@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Startup Backers</title>
+<title>CrowdCube</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,75 +13,135 @@
 
 <canvas id="particles"></canvas>
 
-<div class="hero-bg">
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="grid-overlay"></div>
-</div>
-
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-    <div class="logo">IF</div>
-    <nav>
-        <a>Invest</a>
-        <a>Raising</a>
-        <a>Help Centre</a>
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <svg width="34" height="34" viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="20" fill="#ff4d00"/>
+        <text x="50%" y="54%" text-anchor="middle" fill="white"
+        font-size="18" font-weight="700" font-family="Inter"
+        dy=".3em">C</text>
+      </svg>
+      <span>CrowdCube</span>
+    </div>
+
+    <!-- CENTER LINKS -->
+    <nav class="nav-links">
+      <a href="#">Invest</a>
+      <a href="#">Raise</a>
+      <a href="#">Help Centre</a>
     </nav>
-    <button class="btn-outline">Get Started</button>
+
+    <!-- RIGHT CTA -->
+    <div class="nav-cta">
+      <button class="btn-outline">Log In</button>
+      <button class="btn-primary">Get Started</button>
+    </div>
+
+  </div>
 </header>
 
-<section class="hero section">
-    <div class="hero-inner">
-        <span class="badge">Back 200+ of Europe’s Fastest Growing Startups</span>
-        <h1>Join Europe’s <span>Top Startup Backers</span></h1>
-        <p>With 30,000+ angels backing high-growth investments portfolio and back purposeful businesses.</p>
-        <div class="hero-buttons">
-            <button class="btn-primary">Discover Opportunities</button>
-            <button class="btn-secondary">Raise Funds Now</button>
-        </div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="badge">Back 200+ of Europe’s Fastest Growing Startups</span>
+    <h1>Join Europe’s <span>Top Startup Backers</span></h1>
+    <p>With 30,000+ angels backing high-growth investments portfolio and purposeful businesses.</p>
+
+    <div class="hero-buttons">
+      <button class="btn-primary">Discover Opportunities</button>
+      <button class="btn-secondary">Raise Funds Now</button>
     </div>
+  </div>
 </section>
 
-<div class="horizon"></div>
+<!-- ================= ATF FEATURE CARDS ================= -->
+<section class="features">
+  <div class="feature-card glass">
+    <h3>Transparent Fees</h3>
+    <p>Simple and fair pricing on every investment.</p>
+  </div>
 
-<section class="features section">
-    <div class="feature-card glass tilt">Transparent Fees On Everything</div>
-    <div class="feature-card glass tilt">Take Advantage Of Tax Relief</div>
-    <div class="feature-card glass tilt">Fully Regulated, Safe & Secure</div>
+  <div class="feature-card glass">
+    <h3>Tax Relief</h3>
+    <p>Claim up to 30% tax relief on investments.</p>
+  </div>
+
+  <div class="feature-card glass">
+    <h3>Fully Regulated</h3>
+    <p>Safe & secure platform regulated in Europe.</p>
+  </div>
 </section>
 
-<section class="invest section">
-    <div class="section-header">
-        <span class="mini-badge">Make Your Money Work</span>
-        <h2>Start <span>Investing</span></h2>
+<!-- ================= START INVESTING ================= -->
+<section class="invest">
+  <div class="section-header">
+    <h2>Start <span>Investing</span></h2>
+  </div>
+
+  <div class="cards">
+
+    <div class="card glass tilt">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="">
+      <h4>Hatch SEIS Fund</h4>
+      <div class="progress"><div style="width:70%"></div></div>
+      <p>$1,483,710 Raised</p>
     </div>
 
-    <div class="cards">
-        <div class="card glass tilt">
-            <div class="card-img yellow"></div>
-            <h4>Hatch SEIS Fund</h4>
-            <div class="progress"><div style="width:70%"></div></div>
-            <p>$1,483,710 Raised</p>
-        </div>
-
-        <div class="card glass tilt">
-            <div class="card-img plane"></div>
-            <h4>Hybrid Air Vehicles</h4>
-            <div class="progress"><div style="width:55%"></div></div>
-            <p>$2,753,324 Raised</p>
-        </div>
-
-        <div class="card glass tilt">
-            <div class="card-img purple"></div>
-            <h4>AI Venture Builder</h4>
-            <div class="progress"><div style="width:80%"></div></div>
-            <p>$2,426,123 Raised</p>
-        </div>
+    <div class="card glass tilt">
+      <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e" alt="">
+      <h4>Hybrid Air Vehicles</h4>
+      <div class="progress"><div style="width:55%"></div></div>
+      <p>$2,753,324 Raised</p>
     </div>
+
+    <div class="card glass tilt">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="">
+      <h4>AI Venture Builder</h4>
+      <div class="progress"><div style="width:80%"></div></div>
+      <p>$2,426,123 Raised</p>
+    </div>
+
+  </div>
 </section>
 
-<footer class="footer">
-    <p>© 2025 Crowdcube. All rights reserved.</p>
-</footer>
+<!-- ================= KNOWLEDGE ================= -->
+<section class="knowledge">
+  <div class="section-header">
+    <h2>Level Up Your <span>Investor Knowledge</span></h2>
+  </div>
+
+  <div class="knowledge-grid">
+
+    <div class="knowledge-card glass">
+      <div class="icon">📈</div>
+      <h4>Investor Returns</h4>
+      <p>Understand how equity crowdfunding returns work.</p>
+    </div>
+
+    <div class="knowledge-card glass">
+      <div class="icon">🧮</div>
+      <h4>Investment Calculator</h4>
+      <p>Estimate gains and assess risk exposure.</p>
+    </div>
+
+    <div class="knowledge-card glass">
+      <div class="icon">🔍</div>
+      <h4>Due Diligence</h4>
+      <p>Learn about our transparent review process.</p>
+    </div>
+
+    <div class="knowledge-card glass">
+      <div class="icon">🏛️</div>
+      <h4>CrowdCube Nominee</h4>
+      <p>How our structure protects investors.</p>
+    </div>
+
+  </div>
+</section>
 
 <script src="script.js"></script>
 </body>
